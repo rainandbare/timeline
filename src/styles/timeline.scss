@@ -1,0 +1,63 @@
+.oneDay{
+  height: 1px;
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+
+.dot{
+  position: relative;
+}
+
+.dot span{
+  position: absolute;
+  left: -12px;
+  top: -20px;
+}
+
+
+.dot:after{
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: white;
+  position: relative;
+  top: -2px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.eventDot:after{
+  width: 3px;
+  height: 3px;
+  top: -1px;
+  background: $black;
+}
+
+ul.timeline{
+  margin: 20px;
+  padding: 0;
+}
+
+.work:after{
+  background: green;
+  border-color: green;
+}
+
+.bigLifeEvent:after{
+  background:pink;
+  border-color: pink;
+}
+
+.living:after{
+  background:purple;
+  border-color: purple;
+
+}
+
+.love:after{
+  background:blue;
+  border-color: blue;
+
+}
+
